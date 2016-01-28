@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A cli to an invaluable service mocking platform built on Express.",
   "main": "index.js",
+  "bin": {
+    "mockyeah": "./bin/index.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +16,11 @@
   },
   "author": "Ryan Ricard",
   "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^0.11.4",
+    "mockyeah": "~0.11.0"
+  },
   "devDependencies": {
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
