@@ -1,3 +1,3 @@
-# Mock Yeah CLI
+# mockyeah-cli
 
 Development in progress. Check back soon.
