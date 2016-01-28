@@ -1,0 +1,15 @@
+{
+  "name": "mockyeah-cli",
+  "version": "0.0.0",
+  "description": "A cli to an invaluable service mocking platform built on Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryanricard/mockyeah-cli.git"
+  },
+  "author": "Ryan Ricard",
+  "license": "ISC"
+}
