@@ -12,5 +12,7 @@ const config = require('../config');
 
 program
   .version(config.version)
-  .command('serve [options]', 'development server api')
+  .command('ls', 'list captured service response recordings')
+  .command('play [name]', 'playback captured service response recording')
+  .command('record [name]', 'capture service response recording')
   .parse(process.argv);

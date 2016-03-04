@@ -11,9 +11,17 @@ npm install -g mockyeah-cli
 ## CLI options
 
 ```
-mockyeah -h
-mockyeah serve -h
-mockyeah serve -s [set name]
-mockyeah serve --set=[set name]
-mockyeah serve // prompts you with a list of available sets to load
+Usage: mockyeah [options] [command]
+
+  Commands:
+
+    ls             list captured service response recordings
+    play [name]    playback captured service response recording
+    record [name]  capture service response recording
+    help [cmd]     display help for [cmd]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
 ```
