@@ -1,6 +1,6 @@
 {
   "name": "mockyeah-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A cli to an invaluable service mocking platform built on Express.",
   "main": "index.js",
   "bin": {
