@@ -8,10 +8,10 @@
  */
 
 const program = require('commander');
-const config = require('../config');
+const version = require('../version');
 
 program
-  .version(config.version)
+  .version(version)
   .command('ls', 'list captured service response recordings')
   .command('play [name]', 'playback captured service response recording')
   .command('record [name]', 'capture service response recording')
