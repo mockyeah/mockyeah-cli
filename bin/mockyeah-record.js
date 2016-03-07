@@ -9,6 +9,7 @@
 
 const program = require('commander');
 const boot = require('../lib/boot');
+const chalk = require('chalk');
 let name;
 
 program
