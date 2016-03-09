@@ -9,6 +9,7 @@
 
 const program = require('commander');
 const boot = require('../lib/boot');
+const inquirer = require('inquirer');
 const chalk = require('chalk');
 let name;
 
@@ -20,11 +21,24 @@ program
 global.MOCKYEAH_VERBOSE_OUTPUT = Boolean(program.verbose);
 name = program.args[0];
 
-if (!name) {
-  console.log(chalk.red('Recording name required'));
-  process.exit(1);
-}
-
 boot((env) => {
-  require(env.modulePath).record(name);
+  if (!name) {
+    inquirer.prompt([
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Recording name:'
+      }
+    ], answers => {
+      if (!answers.name.length) {
+        console.log(chalk.red('Recording name required'));
+        process.exit(1);
+      }
+      require(env.modulePath).record(answers.name);
+    });
+  }
+
+  if (name) {
+    require(env.modulePath).record(name);
+  }
 });
