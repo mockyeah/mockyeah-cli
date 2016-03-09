@@ -6,8 +6,7 @@ const gulp = require('gulp');
 const eslint = require('gulp-eslint');
 
 const paths = {
-  scripts: ['!node_modules/**', './**/*.js'],
-  tests: ['./test/**/*-test.js']
+  scripts: ['!node_modules/**', './**/*.js']
 };
 
 gulp.task('lint', () => {
