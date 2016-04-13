@@ -12,6 +12,7 @@ const version = require('../version');
 
 program
   .version(version)
+  .command('init', 'initialize mockyeah configuration')
   .command('ls', 'list captured service response recordings')
   .command('play [name]', 'playback captured service response recording')
   .command('record [name]', 'capture service response recording')
