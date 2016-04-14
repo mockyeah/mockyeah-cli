@@ -12,7 +12,7 @@ const version = require('../version');
 
 program
   .version(version)
-  .command('ls', 'list captured service response recordings')
-  .command('play [name]', 'playback captured service response recording')
-  .command('record [name]', 'capture service response recording')
+  .command('ls', 'list service captures')
+  .command('play [name]', 'play service capture')
+  .command('record [name]', 'record service capture')
   .parse(process.argv);

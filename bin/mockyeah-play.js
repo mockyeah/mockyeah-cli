@@ -25,20 +25,20 @@ global.MOCKYEAH_VERBOSE_OUTPUT = Boolean(program.verbose);
 name = program.args[0];
 
 boot((env) => {
-  const fixturesDir = env.config.fixturesDir;
-  let fixtureNames;
+  const capturesDir = env.config.capturesDir;
+  let captureNames;
 
   try {
-    fixtureNames = fs.readdirSync(fixturesDir).filter((file) => {
-      return fs.statSync(path.join(fixturesDir, file)).isDirectory();
+    captureNames = fs.readdirSync(capturesDir).filter((file) => {
+      return fs.statSync(path.join(capturesDir, file)).isDirectory();
     });
   } catch (err) {
-    console.log(chalk.red('Fixture directory not found at ' + tildify(fixturesDir)));
+    console.log(chalk.red('Capture directory not found at ' + tildify(capturesDir)));
     process.exit(1);
   }
 
-  if (!fixtureNames.length) {
-    console.log(chalk.red('No fixtures available to start'));
+  if (!captureNames.length) {
+    console.log(chalk.red('No captures available to start'));
     console.log(chalk.red('Record one by running: mockyeah record [name]'));
     process.exit(0);
   }
@@ -49,7 +49,7 @@ boot((env) => {
         type: 'list',
         name: 'name',
         message: 'Choose a recording to play:',
-        choices: fixtureNames
+        choices: captureNames
       }
     ], answers => {
       require(env.modulePath).play(answers.name);
