@@ -15,5 +15,5 @@ program
   .parse(process.argv);
 
 boot((env) => {
-  fs.readdirSync(env.config.fixturesDir).sort().filter((file) => console.log('  ' + file));
+  fs.readdirSync(env.config.capturesDir).sort().filter((file) => console.log('  ' + file));
 });

@@ -15,9 +15,9 @@ Usage: mockyeah [options] [command]
 
   Commands:
 
-    ls             list captured service response recordings
-    play [name]    playback captured service response recording
-    record [name]  capture service response recording
+    ls             list service captures
+    play [name]    play service capture
+    record [name]  record service capture
     help [cmd]     display help for [cmd]
 
   Options:
