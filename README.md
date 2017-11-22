@@ -1,6 +1,8 @@
 # mockyeah-cli
 
-Command Line Utility for [mockyeah](https://github.com/ryanricard/mockyeah)
+Command Line Utility for [mockyeah](https://github.com/ryanricard/mockyeah).
+
+[Documentation](https://github.com/ryanricard/mockyeah/wiki/Service-Snapshot-CLI).
 
 Installation:
 
