@@ -1,5 +1,7 @@
 # mockyeah-cli
 
+*__This project has moved to https://github.com/mockyeah/mockyeah, under https://github.com/mockyeah/mockyeah/tree/master/packages/mockyeah-cli.__*
+
 Command Line Utility for [mockyeah](https://github.com/ryanricard/mockyeah)
 
 Installation:
